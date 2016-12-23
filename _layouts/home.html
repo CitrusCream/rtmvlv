@@ -6,7 +6,7 @@ layout: default
 	<header class="post-header">
 		<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
 		<p class="post-info">
-			Опубликовано <time>{{ post.date | date: "%d-%m-%Y" }}</time> в категории <a href="{{ site.url }}/{{ post.category }}" class="category">{{ post.category }} <i class="fa fa-tag" aria-hidden="true"></i></a>
+			Опубликовано <time>{{ post.date | date: "%d-%m-%Y" }}</time> в категории <a href="{{ site.baseurl }}/{{ post.category }}" class="category">{{ post.category }} <i class="fa fa-tag" aria-hidden="true"></i></a>
 		</p>
 		<hr>
 	</header>
