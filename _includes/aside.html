@@ -1,0 +1,10 @@
+<aside{% if page.about-page %} class="about-aside"{% endif %}>
+	<nav class="navigation"{% if page.img %} style="background-image: url('{{ site.url }}{{ page.img }}');"{% endif %}>
+		<ul>
+			<li><a href="{{ site.url }}/about.html" id="about_me"><span>Обо мне</span><i class="fa fa-user" aria-hidden="true"></i></a></li>
+			<li><a href="{{ site.url }}/category1" id="cat2" {% if page.category == "category1" %} class="active"{% endif %}><span>category1</span><i class="fa fa-headphones" aria-hidden="true"></i></a></li>
+			<li><a href="{{ site.url }}/category2" id="cat3" {% if page.category == "category2" %} class="active"{% endif %}><span>category2</span><i class="fa fa-magic" aria-hidden="true"></i></a></li>
+			<li><a href="{{ site.url }}/category3" id="cat4" {% if page.category == "category3" %} class="active"{% endif %}><span>category3</span><i class="fa fa-sign-language" aria-hidden="true"></i></a></li>
+		</ul>
+	</nav>
+</aside>
